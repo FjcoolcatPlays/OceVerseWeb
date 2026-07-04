@@ -1,0 +1,817 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oce Verse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/logo.png?v=php-light-orange-4">
+  <link rel="stylesheet" href="/styles.css?v=php-stats-profile-12">
+  <script src="/app.js?v=php-stats-profile-12" defer=""></script>
+</head>
+<body class="motion-ready">
+  <nav>
+    <a href="#home" class="logo" data-section="home">
+      <img class="brand-mark" src="/logo.png?v=php-light-orange-4" alt="" aria-hidden="true">
+      <span class="brand-text">OCE<span>VERSE</span></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <ul id="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#stats" class="nav-link" data-section="stats">Stats</a></li>
+      <li><a href="#store" class="nav-link" data-section="store">Ingame Shop</a></li>
+      <li><a href="#suggestions" class="nav-link" data-section="suggestions">Suggestions</a></li>
+      <li><a href="#vote" class="nav-link" data-section="vote">Vote</a></li>
+      <li><a href="https://discord.gg/oceverse" target="_blank" rel="noreferrer" class="nav-link discord-nav">Discord</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="active">
+      <div class="hero">
+        <div class="hero-copy is-visible" data-animate="" style="--animate-delay: 0ms;">
+          <span class="eyebrow">Best Network AU</span>
+          <h1>OCE<span>VERSE</span></h1>
+          <p>FFA PvP with 1v1 rooms, loot drops, custom weapons, and community events built for Australian players.</p>
+          <div class="hero-actions">
+            <div class="ip-box">
+              <span class="ip-label">Server IP</span>
+              <span class="ip-text" id="server-ip">oceverse.club</span>
+              <button class="copy-btn" id="copy-ip" type="button">Copy</button>
+            </div>
+            <a href="https://discord.gg/oceverse" target="_blank" rel="noreferrer" class="discord-btn">Join Discord</a>
+          </div>
+        </div>
+        <div class="server-visual is-visible offline" id="server-visual" aria-label="Oce Verse network status" data-animate="" style="--animate-delay: 70ms;">
+          <img class="server-logo" src="/logo.png" alt="Oce Verse logo">
+          <div>
+            <span id="network-label">Network</span>
+            <strong id="network-status">Offline</strong>
+            <em id="network-players">Could not reach oceverse.club</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="servers-title is-visible" data-animate="" style="--animate-delay: 140ms;">Network Servers</div>
+      <div class="servers-grid">
+        <article class="server-card online is-visible" data-animate="" style="--animate-delay: 210ms;">
+          <h3>FFA</h3>
+          <p>Free for all PvP, 1v1 rooms, loot drops, and custom weapons.</p>
+          <span class="status online-text"><span></span>Online</span>
+        </article>
+        <article class="server-card soon is-visible" data-animate="" style="--animate-delay: 280ms;">
+          <h3>SMP</h3>
+          <p>Survival multiplayer world coming soon.</p>
+          <span class="status soon-text"><span></span>Coming Soon</span>
+        </article>
+        <article class="server-card soon is-visible" data-animate="" style="--animate-delay: 350ms;">
+          <h3>Events</h3>
+          <p>Seasonal events and tournaments coming soon.</p>
+          <span class="status soon-text"><span></span>Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="stats" class="">
+      <div class="page-header is-visible" data-animate="" style="--animate-delay: 0ms;">
+        <span class="eyebrow">Player Stats</span>
+        <h2>Highest <span>Rankings</span></h2>
+        <p>All Players Rankings In Oce Verse.</p>
+      </div>
+
+      <form class="stats-search is-visible" id="stats-search-form" data-animate="" style="--animate-delay: 70ms;">
+        <input id="stats-search-input" type="text" placeholder="Search a Minecraft username" maxlength="16" autocomplete="off">
+        <button class="submit-btn" type="submit">Search</button>
+        <button class="ghost-btn" id="stats-clear" type="button">Top Players</button>
+      </form>
+
+      <div class="stats-feature" id="stats-feature">
+        <div class="stats-profile" id="stats-profile">
+    <article class="stats-profile-card is-visible" data-animate="" style="--animate-delay: 140ms;">
+      <div class="stats-profile-skin">
+        <img src="https://mc-heads.net/body/004db024-9cbb-4447-a6d3-d7775abd7649/190" alt="NotxHollow Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-profile-main">
+        <div class="stats-profile-kicker">
+    <span class="stats-profile-status">
+      <span class=""></span>Last seen 3h ago
+    </span>
+  </div>
+        <h3>NotxHollow</h3>
+        <div class="stats-profile-pills">
+          <span>#1</span>
+          <span>Playtime 11h 55m</span>
+          <span>UUID: 004db024-9cbb-4447-a6d3-d7775abd7649</span>
+        </div>
+        <div class="stats-profile-score">
+          <strong>151</strong>
+          <span>Total Kills</span>
+        </div>
+        <div class="stats-profile-grid">
+          <div><span>Deaths</span><strong>22</strong></div>
+          <div><span>KD</span><strong>6.86</strong></div>
+          <div><span>Killstreak</span><strong>8</strong></div>
+        </div>
+      </div>
+    </article>
+  </div>
+        <aside class="stats-records is-visible" id="stats-records" data-animate="" style="--animate-delay: 210ms;">
+    <h3>Server Records</h3>
+    
+    <button class="stats-record-item" type="button" data-stats-sort="killstreak">
+      <span>Highest Kill Streak</span>
+      <strong>31</strong>
+      <small>NotxHollow</small>
+      <em>View leaderboard</em>
+    </button>
+  
+    <button class="stats-record-item" type="button" data-stats-sort="deaths">
+      <span>Highest Deaths</span>
+      <strong>36</strong>
+      <small>yav_</small>
+      <em>View leaderboard</em>
+    </button>
+  
+    <button class="stats-record-item" type="button" data-stats-sort="playtime">
+      <span>Longest Playtime</span>
+      <strong>11h 55m</strong>
+      <small>NotxHollow</small>
+      <em>View leaderboard</em>
+    </button>
+  
+  </aside>
+      </div>
+      <div class="stats-summary is-visible" id="stats-summary" data-animate="" style="--animate-delay: 280ms;">Showing top players by kills.</div>
+      <div class="stats-results" id="stats-results">
+    <div class="stats-table-labels is-visible" data-animate="" style="--animate-delay: 350ms;">
+      <span>#</span>
+      <span>Player</span>
+      <span>Kills / Deaths / KD</span>
+    </div>
+    
+    <article class="stats-card stats-rank-1 selected is-visible" data-player-profile="004db024-9cbb-4447-a6d3-d7775abd7649" data-animate="" style="--animate-delay: 420ms;">
+      <div class="stats-rank">#1</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/004db024-9cbb-4447-a6d3-d7775abd7649/96" alt="NotxHollow Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/NotxHollow" data-player-profile="004db024-9cbb-4447-a6d3-d7775abd7649">NotxHollow</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 11h 55m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>151</strong></div><div><span>Deaths</span><strong>22</strong></div><div><span>KD</span><strong>6.86</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card stats-rank-2 is-visible" data-player-profile="b70545ca-7413-48f9-919d-c1b8f01c490e" data-animate="" style="--animate-delay: 490ms;">
+      <div class="stats-rank">#2</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/b70545ca-7413-48f9-919d-c1b8f01c490e/96" alt="micwowave4 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/micwowave4" data-player-profile="b70545ca-7413-48f9-919d-c1b8f01c490e">micwowave4</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 4h 45m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>52</strong></div><div><span>Deaths</span><strong>16</strong></div><div><span>KD</span><strong>3.25</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card stats-rank-3 is-visible" data-player-profile="b6597148-f800-4c2a-a7f9-ab956ff494c8" data-animate="" style="--animate-delay: 560ms;">
+      <div class="stats-rank">#3</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/b6597148-f800-4c2a-a7f9-ab956ff494c8/96" alt="M4rxc Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/M4rxc" data-player-profile="b6597148-f800-4c2a-a7f9-ab956ff494c8">M4rxc</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 7h 11m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>37</strong></div><div><span>Deaths</span><strong>35</strong></div><div><span>KD</span><strong>1.06</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="abd82c23-03b6-4694-a56f-4cccbffb687d" data-animate="" style="--animate-delay: 630ms;">
+      <div class="stats-rank">#4</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/abd82c23-03b6-4694-a56f-4cccbffb687d/96" alt="ZynicMC Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/ZynicMC" data-player-profile="abd82c23-03b6-4694-a56f-4cccbffb687d">ZynicMC</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 11h 46m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>36</strong></div><div><span>Deaths</span><strong>21</strong></div><div><span>KD</span><strong>1.71</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="63f5c783-d669-470b-b01d-3ab578ee911d" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#5</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/63f5c783-d669-470b-b01d-3ab578ee911d/96" alt="Twisted720 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Twisted720" data-player-profile="63f5c783-d669-470b-b01d-3ab578ee911d">Twisted720</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 3h 29m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>22</strong></div><div><span>Deaths</span><strong>14</strong></div><div><span>KD</span><strong>1.57</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="7d5ef42a-4890-44c8-84e8-2fd3382f73f7" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#6</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/7d5ef42a-4890-44c8-84e8-2fd3382f73f7/96" alt="yav_ Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/yav_" data-player-profile="7d5ef42a-4890-44c8-84e8-2fd3382f73f7">yav_</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 6h 26m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>22</strong></div><div><span>Deaths</span><strong>36</strong></div><div><span>KD</span><strong>0.61</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="80c4a201-1086-4811-808e-2fadff658670" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#7</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/80c4a201-1086-4811-808e-2fadff658670/96" alt="Bigchungus1809 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Bigchungus1809" data-player-profile="80c4a201-1086-4811-808e-2fadff658670">Bigchungus1809</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 3h 17m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>20</strong></div><div><span>Deaths</span><strong>4</strong></div><div><span>KD</span><strong>5</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="c3bf2645-88d1-402b-be46-10aaaa18a322" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#8</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/c3bf2645-88d1-402b-be46-10aaaa18a322/96" alt="assopissated Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/assopissated" data-player-profile="c3bf2645-88d1-402b-be46-10aaaa18a322">assopissated</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 29m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>8</strong></div><div><span>Deaths</span><strong>3</strong></div><div><span>KD</span><strong>2.67</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="6ff28cb8-21df-4c64-972a-ae9e8c49e064" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#9</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/6ff28cb8-21df-4c64-972a-ae9e8c49e064/96" alt="SavageBaldi Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/SavageBaldi" data-player-profile="6ff28cb8-21df-4c64-972a-ae9e8c49e064">SavageBaldi</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 47m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>6</strong></div><div><span>Deaths</span><strong>7</strong></div><div><span>KD</span><strong>0.86</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="789bca3d-33b3-442c-a708-3ee7a2db0e19" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#10</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/789bca3d-33b3-442c-a708-3ee7a2db0e19/96" alt="zxvloe Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/zxvloe" data-player-profile="789bca3d-33b3-442c-a708-3ee7a2db0e19">zxvloe</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 41m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>5</strong></div><div><span>Deaths</span><strong>12</strong></div><div><span>KD</span><strong>0.42</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="49850b47-ae59-4136-8596-a0b143bdb302" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#11</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/49850b47-ae59-4136-8596-a0b143bdb302/96" alt="Berzerkc Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Berzerkc" data-player-profile="49850b47-ae59-4136-8596-a0b143bdb302">Berzerkc</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 2h 33m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>5</strong></div><div><span>Deaths</span><strong>6</strong></div><div><span>KD</span><strong>0.83</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="87abbe19-2ac5-423c-a1f5-e01040762e7a" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#12</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/87abbe19-2ac5-423c-a1f5-e01040762e7a/96" alt="Light_mx Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Light_mx" data-player-profile="87abbe19-2ac5-423c-a1f5-e01040762e7a">Light_mx</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 44m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>5</strong></div><div><span>Deaths</span><strong>4</strong></div><div><span>KD</span><strong>1.25</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="936032a0-1b0d-4f45-9ea4-40201ab4fe26" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#13</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/936032a0-1b0d-4f45-9ea4-40201ab4fe26/96" alt="NotStarz_ Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/NotStarz_" data-player-profile="936032a0-1b0d-4f45-9ea4-40201ab4fe26">NotStarz_</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 1h 12m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>5</strong></div><div><span>Deaths</span><strong>8</strong></div><div><span>KD</span><strong>0.63</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="f10f49d7-1b61-4750-83c2-9433547a4869" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#14</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/f10f49d7-1b61-4750-83c2-9433547a4869/96" alt="luayra Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/luayra" data-player-profile="f10f49d7-1b61-4750-83c2-9433547a4869">luayra</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 28m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>5</strong></div><div><span>Deaths</span><strong>7</strong></div><div><span>KD</span><strong>0.71</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="81ed4a91-c7fd-4640-9c4c-8e585fee65c5" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#15</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/81ed4a91-c7fd-4640-9c4c-8e585fee65c5/96" alt="XiaoMing73 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/XiaoMing73" data-player-profile="81ed4a91-c7fd-4640-9c4c-8e585fee65c5">XiaoMing73</a></h3>
+          <div class="stats-player-meta">
+            <span class="stats-store-rank rank-cosmic"><span class="stats-rank-icon" aria-hidden="true"></span>Cosmic rank</span>
+            <span>Playtime 2h 33m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>4</strong></div><div><span>Deaths</span><strong>13</strong></div><div><span>KD</span><strong>0.31</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="96f89b56-f8f3-4010-b6ed-3eee6a667d4a" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#16</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/96f89b56-f8f3-4010-b6ed-3eee6a667d4a/96" alt="Levy1011 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Levy1011" data-player-profile="96f89b56-f8f3-4010-b6ed-3eee6a667d4a">Levy1011</a></h3>
+          <div class="stats-player-meta">
+            <span class="stats-store-rank rank-stellar"><span class="stats-rank-icon" aria-hidden="true"></span>Stellar rank</span>
+            <span>Playtime 50m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>3</strong></div><div><span>Deaths</span><strong>6</strong></div><div><span>KD</span><strong>0.5</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="429fc8e4-af9a-47b6-bad1-909d4aa342a3" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#17</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/429fc8e4-af9a-47b6-bad1-909d4aa342a3/96" alt="Clearly_cheating Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/Clearly_cheating" data-player-profile="429fc8e4-af9a-47b6-bad1-909d4aa342a3">Clearly_cheating</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 2h 21m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>2</strong></div><div><span>Deaths</span><strong>1</strong></div><div><span>KD</span><strong>2</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="3c1295cc-177f-4af7-a749-f832ef3bf48a" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#18</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/3c1295cc-177f-4af7-a749-f832ef3bf48a/96" alt="peacefulmans Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/peacefulmans" data-player-profile="3c1295cc-177f-4af7-a749-f832ef3bf48a">peacefulmans</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 43m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>1</strong></div><div><span>Deaths</span><strong>2</strong></div><div><span>KD</span><strong>0.5</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="6fbf3d4b-24ed-4b49-8791-88103e4d6e95" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#19</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/6fbf3d4b-24ed-4b49-8791-88103e4d6e95/96" alt="BIH1 Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/BIH1" data-player-profile="6fbf3d4b-24ed-4b49-8791-88103e4d6e95">BIH1</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 1m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>1</strong></div><div><span>Deaths</span><strong>0</strong></div><div><span>KD</span><strong>1</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="21d3a402-9333-4649-819e-c32db49c3691" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#20</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/21d3a402-9333-4649-819e-c32db49c3691/96" alt="__GR33D Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/__GR33D" data-player-profile="21d3a402-9333-4649-819e-c32db49c3691">__GR33D</a></h3>
+          <div class="stats-player-meta">
+            <span class="stats-store-rank rank-cosmic"><span class="stats-rank-icon" aria-hidden="true"></span>Cosmic rank</span>
+            <span>Playtime 1h 6m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>0</strong></div><div><span>Deaths</span><strong>8</strong></div><div><span>KD</span><strong>0</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="d823e227-f60d-49b5-abe5-96b46f012c51" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#21</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/d823e227-f60d-49b5-abe5-96b46f012c51/96" alt="GhxstV Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/GhxstV" data-player-profile="d823e227-f60d-49b5-abe5-96b46f012c51">GhxstV</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 1m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>0</strong></div><div><span>Deaths</span><strong>0</strong></div><div><span>KD</span><strong>0</strong></div>
+      </div>
+    </article>
+  
+    <article class="stats-card is-visible" data-player-profile="1ab7b181-2e6c-41cf-b1a7-a748e5bc960b" data-animate="" style="--animate-delay: 700ms;">
+      <div class="stats-rank">#22</div>
+      <div class="stats-skin-wrap">
+        <img class="stats-skin" src="https://mc-heads.net/body/1ab7b181-2e6c-41cf-b1a7-a748e5bc960b/96" alt="hallamaGOD Minecraft skin" loading="lazy">
+      </div>
+      <div class="stats-player">
+        <div>
+          <h3><a class="stats-player-open" href="/player/hallamaGOD" data-player-profile="1ab7b181-2e6c-41cf-b1a7-a748e5bc960b">hallamaGOD</a></h3>
+          <div class="stats-player-meta">
+            
+            <span>Playtime 0m</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div><span>Kills</span><strong>0</strong></div><div><span>Deaths</span><strong>0</strong></div><div><span>KD</span><strong>0</strong></div>
+      </div>
+    </article>
+  
+  </div>
+    </section>
+
+    <section id="store" class="">
+      <div class="page-header is-visible" data-animate="" style="--animate-delay: 0ms;">
+        <span class="eyebrow">Ingame Shop</span>
+        <h2>Ingame <span>Shop</span></h2>
+        <p>Connect Discord first, choose an item, enter your Minecraft username, then Stripe handles checkout and invoices.</p>
+      </div>
+
+      <div class="login-panel is-visible" id="login-panel" data-animate="" style="--animate-delay: 70ms;">
+        <div class="discord-mark">
+          <img src="/discord.png?v=php-stats-profile-12" alt="Discord logo" onerror="this.onerror=null;this.src='/logo.png?v=php-light-orange-4'">
+        </div>
+        <h3>Link Your Discord</h3>
+        <p>You need to connect your Discord account before making a purchase. This lets us deliver your Discord role and apply your Minecraft item.</p>
+        <button class="discord-connect" id="discord-login" type="button">Connect with Discord</button>
+      </div>
+
+      <div class="account-bar hidden" id="account-bar" data-animate="">
+        <div class="account-user">
+          <img id="account-avatar" src="" alt="">
+          <strong>Logged in as <span id="account-name"></span></strong>
+        </div>
+        <button class="ghost-btn" id="logout-btn" type="button">Logout</button>
+      </div>
+
+      <div class="store-products hidden" id="store-products"></div>
+      <p class="store-note is-visible" data-animate="" style="--animate-delay: 140ms;">All purchases are processed by Stripe. Delivery starts only after Stripe confirms payment.</p>
+    </section>
+
+    <section id="suggestions" class="">
+      <div class="page-header is-visible" data-animate="" style="--animate-delay: 0ms;">
+        <h2>Sugges<span>tions</span></h2>
+        <p>Got an idea? Drop it below. The community votes and staff pin the best ones.</p>
+      </div>
+      <div class="suggestions-layout">
+        <div>
+          <div class="suggestion-filters is-visible" data-animate="" style="--animate-delay: 70ms;">
+            <button class="filter-btn active" type="button" data-filter="pinned">Pinned</button>
+            <button class="filter-btn" type="button" data-filter="top">Top Voted</button>
+            <button class="filter-btn" type="button" data-filter="new">Newest</button>
+            <button class="filter-btn" type="button" data-filter="bottom">Most Downvoted</button>
+          </div>
+          <div class="suggestions-list" id="suggestions-list">
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 140ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">no windcharges</div>
+        
+      </div>
+      <div class="suggestion-body">no windchargesno windchargesno windchargesno windchargesno windchargesno windchargesno windchargesno windchargesno windchargesno windchargesno windcharges</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_93201f7f587d79af16378791" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_93201f7f587d79af16378791" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">16d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 210ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">Door PVP</div>
+        
+      </div>
+      <div class="suggestion-body">add a Door kit. add a Door kit. add a Door kit. add a Door kit. add a Door kit. add a Door kit. add a Door kit. add a Door kit. add a Door kit.</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_c6b9ba4e8a4f2d96c7b2c114" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_c6b9ba4e8a4f2d96c7b2c114" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">23d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 280ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">add triple t</div>
+        
+      </div>
+      <div class="suggestion-body">pls
+
+tung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tungtung tung</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_621e411685b370e0eef8f89d" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_621e411685b370e0eef8f89d" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">28d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 350ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">This is a fricking test.</div>
+        
+      </div>
+      <div class="suggestion-body">Test - jorbay, details have to be 20 characters!</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_6970d21b8e951b7f25a31695" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_6970d21b8e951b7f25a31695" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">28d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 420ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">dont add windcharges</div>
+        
+      </div>
+      <div class="suggestion-body">in 1s rooms they just wind charge you away and its so annoying</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_55df22ef098eb63e707f5d04" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_55df22ef098eb63e707f5d04" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">28d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 490ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">Myst scythe</div>
+        
+      </div>
+      <div class="suggestion-body">Freezes the player and any water they place down within a 7 block radius</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_a427c017a114a8f696943f10" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_a427c017a114a8f696943f10" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">29d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 560ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">hi</div>
+        
+      </div>
+      <div class="suggestion-body">oK!</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_dccf186f44de761eaa062007" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_dccf186f44de761eaa062007" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">29d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 630ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">123</div>
+        
+      </div>
+      <div class="suggestion-body">123</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_4d2f91a0b4009c0cf840d8d4" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_4d2f91a0b4009c0cf840d8d4" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">29d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 700ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">WInd Charges</div>
+        
+      </div>
+      <div class="suggestion-body">DONT ADD WINDCHARGES</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_325cd54be62ea0ffaa6cef06" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_325cd54be62ea0ffaa6cef06" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">29d ago</span>
+      </div>
+    </article>
+  
+    <article class="suggestion-card is-visible" data-animate="" style="--animate-delay: 700ms;">
+      <div class="suggestion-top">
+        <div class="suggestion-title">test</div>
+        
+      </div>
+      <div class="suggestion-body">test</div>
+      <div class="suggestion-footer">
+        <button class="vote-btn " type="button" data-vote="sug_3c30d4d608fdd4c1e7880b19" data-dir="up">Up 0</button>
+        <button class="vote-btn " type="button" data-vote="sug_3c30d4d608fdd4c1e7880b19" data-dir="down">Down 0</button>
+        <span class="suggestion-meta">29d ago</span>
+      </div>
+    </article>
+  </div>
+        </div>
+        <form class="suggestion-form is-visible" id="suggestion-form" data-animate="" style="--animate-delay: 700ms;">
+          <h3>Submit Idea</h3>
+          <label>
+            <span>Title</span>
+            <input type="text" id="sug-title" placeholder="Short summary of your idea" maxlength="80">
+          </label>
+          <label>
+            <span>Details</span>
+            <textarea id="sug-body" placeholder="Explain your suggestion..."></textarea>
+          </label>
+          <button class="submit-btn" type="submit">Submit Suggestion</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="vote">
+      <div class="page-header" data-animate="">
+        <h2>Vote</h2>
+        <p>Voting helps us grow. Vote daily on each site to earn in-game rewards.</p>
+      </div>
+      <div class="vote-container">
+        <a class="vote-site" href="#" aria-label="Vote on Planet Minecraft" data-animate="">
+          <span><strong>Planet Minecraft</strong><small>Vote once every 24 hours</small></span>
+          <em>Vote</em>
+        </a>
+        <a class="vote-site" href="#" aria-label="Vote on Minecraft Server List" data-animate="">
+          <span><strong>Minecraft Server List</strong><small>Vote once every 24 hours</small></span>
+          <em>Vote</em>
+        </a>
+        <a class="vote-site" href="#" aria-label="Vote on Top Minecraft Servers" data-animate="">
+          <span><strong>Top Minecraft Servers</strong><small>Vote once every 24 hours</small></span>
+          <em>Vote</em>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <img class="brand-mark" src="/logo.png?v=php-light-orange-4" alt="" aria-hidden="true">
+      <span class="brand-text">OCE<span>VERSE</span></span>
+    </div>
+    <div class="footer-links">
+      <a href="#stats" data-section="stats">Stats</a>
+      <a href="#store" data-section="store">Ingame Shop</a>
+      <a href="https://discord.gg/oceverse" target="_blank" rel="noreferrer" class="footer-discord">Discord</a>
+      <a href="#suggestions" data-section="suggestions">Suggestions</a>
+      <a href="#vote" data-section="vote">Vote</a>
+    </div>
+    <div class="footer-ip">oceverse.club</div>
+  </footer>
+
+  <div class="modal-backdrop hidden" id="checkout-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close">x</button>
+      <img class="minecraft-preview" id="minecraft-preview" src="https://mc-heads.net/avatar/Steve/96" alt="">
+      <h3 id="checkout-title">Enter Minecraft Username</h3>
+      <p id="checkout-product">Your purchase will be applied to this Minecraft account.</p>
+      <form id="checkout-form">
+        <input id="minecraft-name" type="text" placeholder="e.g. Notch" maxlength="16" autocomplete="off">
+        <button class="checkout-btn" type="submit">Proceed to Checkout</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;bc907c82ffdc47b494c287c9d85f5eab&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+</body></html>
